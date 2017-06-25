@@ -9,7 +9,8 @@ function check_package_and_install() {
 }
 
 command -v brew >/dev/null 2>&1 || { 
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew tap caskroom/cask
 }
 
 echo "Install the related packages"
@@ -20,4 +21,17 @@ check_package_and_install git
 
 #download git-completion.bash 
 echo "git-completion.bash"
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -P scripts/
+wget -N https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -P scripts/
+
+#download bash-it
+git clone https://github.com/revans/bash-it.git
+./bash-it/install.sh
+
+# download powerline font
+git clone https://github.com/powerline/fonts.git
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
