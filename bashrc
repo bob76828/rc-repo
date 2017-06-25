@@ -1,12 +1,7 @@
 PATH=$PATH:/usr/local/sbin
 
-export CLICOLOR=1
-export LS_COLORS=1
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export NVM_DIR="/Users/boblin/.nvm"
-
-# This loads bash_prompt
-[[ -f "$HOME/Documents/rc-repo/bash_prompt" ]] && source "$HOME/Documents/rc-repo/bash_prompt"
 
 # This loads nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
