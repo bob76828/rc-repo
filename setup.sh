@@ -10,7 +10,7 @@ function check_package_and_install() {
 
 command -v brew >/dev/null 2>&1 || { 
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	brew tap homebrew/cask-cask
+	brew tap homebrew/cask
 }
 
 echo "Install the related packages"
