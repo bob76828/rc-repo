@@ -18,6 +18,7 @@ check_package_and_install nvm
 check_package_and_install bash-completion
 check_package_and_install wget
 check_package_and_install git
+check_package_and_install rbenv
 
 #download git-completion.bash 
 echo "git-completion.bash"

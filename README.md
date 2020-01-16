@@ -14,6 +14,12 @@ if [ -f ~/Documents/rc-repo/bash_profile ]; then
 fi
 ```
 
+change bash-it theme to powerline-multiline
+```
+vim ~/.bash-profile
+find the env variable BASH_IT_THEME and set powerline-multiline
+```
+
 create or insert these codes to ~/.gitconfig
 ```
 [include]
