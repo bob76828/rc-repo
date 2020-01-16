@@ -18,6 +18,9 @@ change bash-it theme to powerline-multiline
 ```
 vim ~/.bash-profile
 find the env variable BASH_IT_THEME and set powerline-multiline
+open iterm2
+preferences > Profiles > Text > Font > choose source code for powerline
+preferences > Profiles > Text > Font > Non-ASCII Font > choose source code for powerline
 ```
 
 create or insert these codes to ~/.gitconfig
